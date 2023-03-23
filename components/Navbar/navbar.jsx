@@ -6,8 +6,8 @@ import Digital from '../../public/assets/Digital.svg'
 const navigation = [
   { name: "Services", href: "#" },
   { name: "Projets", href: "#" },
-  { name: "Blog", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Blog", href: "/Blog" },
+  { name: "Contact", href: "/Contact" },
 ];
 
 export default function Navbar() {

@@ -166,7 +166,7 @@ export default function Contact() {
                     Brenna Goyette
                   </div>
                   <div className="text-sm leading-6 text-gray-600">
-                    CEO of Workcation
+                    Digital Youth Service Fr Teams
                   </div>
                 </div>
               </figcaption>
