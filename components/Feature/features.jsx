@@ -1,7 +1,11 @@
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
-  LockClosedIcon,
+  DevicePhoneMobileIcon,
+  GlobeAltIcon,
+  PresentationChartBarIcon,
+  ChartBarIcon,
+  WrenchScrewdriverIcon
 } from "@heroicons/react/20/solid";
 
 const features = [
@@ -9,43 +13,43 @@ const features = [
     name: "Conception de sites web personnalisés.",
     description:
       "Nous créons des sites web sur mesure pour chaque client, avec tout ce dont ils ont besoin pour réussir en ligne.",
-    href: "#",
+    href: "/Contact",
     icon: CloudArrowUpIcon,
   },
   {
     name: "Développement d'applications mobiles sur mesure",
     description:
       "Applications mobiles personnalisées selon besoins clients avec interface, fonctionnalités, contenu, bases de données et sécurité adaptés.",
-    href: "#",
-    icon: LockClosedIcon,
+    href: "/Contact",
+    icon: DevicePhoneMobileIcon,
   },
   {
     name: "Intégration de fonctionnalités avancées sur les sites web ou les applications mobiles",
     description:
       "Fonctionnalités avancées intégrées pour meilleure expérience utilisateur : recherche, réservation, paiement, chat en direct, etc.",
-    href: "#",
-    icon: ArrowPathIcon,
+    href: "/Contact",
+    icon: GlobeAltIcon,
   },
   {
     name: "Optimisation pour les moteurs de recherche (SEO)",
     description:
       "Service d'optimisation SEO : contenu, liens entrants, balises, mots-clés pour meilleure visibilité et trafic.",
-    href: "#",
-    icon: ArrowPathIcon,
+    href: "/Contact",
+    icon: PresentationChartBarIcon,
   },
   {
     name: "Développement de stratégies de marketing numérique",
     description:
       "Stratégies marketing numérique pour objectifs commerciaux en ligne : publicité, e-mail, contenu, réseaux sociaux, données.",
     href: "#",
-    icon: ArrowPathIcon,
+    icon: ChartBarIcon,
   },
   {
     name: "Développement des outils pour le grand public",
     description:
       "Nous travaillons sur la conception et le développement d'outils numériques conviviaux pour améliorer la productivité, faciliter les tâches quotidiennes et répondre aux besoins des utilisateurs finaux",
-    href: "#",
-    icon: ArrowPathIcon,
+    href: "/Contact",
+    icon: WrenchScrewdriverIcon,
   },
 ];
 
@@ -61,7 +65,7 @@ export default function Feature() {
             Des solutions numériques personnalisées pour vous
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            nous proposons une large gamme de services numériques personnalisés
+            Nous proposons une large gamme de services numériques personnalisés
             pour répondre aux besoins uniques de chaque client. 
           </p>
         </div>
@@ -83,7 +87,7 @@ export default function Feature() {
                       href={feature.href}
                       className="text-sm font-semibold leading-6 text-indigo-600"
                     >
-                      Contact Us<span aria-hidden="true">→</span>
+                      Contactez-nous<span aria-hidden="true">→</span>
                     </a>
                   </p>
                 </dd>

@@ -1,11 +1,12 @@
 const navigation = {
   main: [
-    { name: "Contact", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Newsletter", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Projets", href: "#" },
-    { name: "Services", href: "#" },
+    { name: "Accueil", href: "/" },
+    { name: "Contact", href: "/Contact" },
+    { name: "Blog", href: "/Blog" },
+    {
+      name: "Newsletter",
+      href: "https://digitalyouthservicefr.substack.com/?r=28t6gq&utm_campaign=pub-share-checklist",
+    },
   ],
   social: [
     {

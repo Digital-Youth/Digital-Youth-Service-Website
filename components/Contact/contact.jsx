@@ -1,5 +1,29 @@
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_pjgj5pb",
+        "template_gdu9pal",
+        form.current,
+        "xtY4slGVGVMBzihOo"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="relative isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
       <svg
@@ -39,7 +63,7 @@ export default function Contact() {
           We help companies and individuals build out their brand guidelines.
         </p>
         <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-          <form action="#" method="POST" className="lg:flex-auto">
+          <form ref={form} onSubmit={sendEmail} className="lg:flex-auto">
             <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
               <div>
                 <label
@@ -75,38 +99,24 @@ export default function Contact() {
                   />
                 </div>
               </div>
-              <div>
+              <div className="sm:col-span-2">
                 <label
-                  htmlFor="budget"
+                  htmlFor="last-name"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Budget
+                  Email
                 </label>
                 <div className="mt-2.5">
                   <input
-                    id="budget"
-                    name="budget"
-                    type="text"
+                    type="email"
+                    name="email"
+                    id="email"
+                    autoComplete="family-name"
                     className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-              <div>
-                <label
-                  htmlFor="website"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Website
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="url"
-                    name="website"
-                    id="website"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
+
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
@@ -142,31 +152,18 @@ export default function Contact() {
             </p>
           </form>
           <div className="lg:mt-6 lg:w-80 lg:flex-none">
-            <img
-              className="h-12 w-auto"
-              src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg"
-              alt=""
-            />
-            <figure className="mt-10">
+            <img className="h-1/4 w-10/12" src="/assets/Digital.svg" alt="" />
+            <figure className="">
               <blockquote className="text-lg font-semibold leading-8 text-gray-900">
                 <p>
-                  “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  expedita voluptas culpa sapiente alias molestiae. Numquam
-                  corrupti in laborum sed rerum et corporis.”
+                  “La technologie est le moteur de l'innovation, mais ce sont
+                  les équipes qui la rendent possible.”
                 </p>
               </blockquote>
-              <figcaption className="mt-10 flex gap-x-6">
-                <img
-                  src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80"
-                  alt=""
-                  className="h-12 w-12 flex-none rounded-full bg-gray-50"
-                />
+              <figcaption className="mt-5 flex gap-x-6">
                 <div>
-                  <div className="text-base font-semibold text-gray-900">
-                    Brenna Goyette
-                  </div>
-                  <div className="text-sm leading-6 text-gray-600">
-                    Digital Youth Service Fr Teams
+                  <div className="text-base font-light text-gray-900">
+                    -Steve Jobs
                   </div>
                 </div>
               </figcaption>

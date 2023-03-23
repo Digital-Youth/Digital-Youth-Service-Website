@@ -50,7 +50,8 @@ export default function Projects() {
             Nos différents projets
           </h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
+            Découvrez nos projets chez Digital Youth Service Fr - sites web
+            personnalisés, applications mobiles et plus encore.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -59,7 +60,7 @@ export default function Projects() {
               key={post.id}
               className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
             >
-                  <img
+              <img
                 src={post.imageUrl}
                 alt=""
                 className="absolute inset-0 -z-10 h-full w-full object-cover"

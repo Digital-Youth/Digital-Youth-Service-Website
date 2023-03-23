@@ -89,10 +89,10 @@ export default function Hero() {
                       Join our Newsletter
                     </a>
                     <a
-                      href="#"
+                      href="/"
                       className="text-sm font-semibold leading-6 text-gray-900"
                     >
-                      Contact Us <span aria-hidden="true">→</span>
+                      Contactez-nous <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>

@@ -4,8 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from 'next/image';
 import Digital from '../../public/assets/Digital.svg'
 const navigation = [
-  { name: "Services", href: "#" },
-  { name: "Projets", href: "#" },
+  {name: "Accueil", href: "/"},
   { name: "Blog", href: "/Blog" },
   { name: "Contact", href: "/Contact" },
 ];
@@ -16,17 +15,16 @@ export default function Navbar() {
   return (
     <header className="bg-white">
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between p-1 lg:px-1"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <Image
-              className="h-8 w-auto"
-              src={Digital}
-                          alt="Digital"
-                         
+            <img
+              className="h-full w-4/12"
+              src="/assets/Digital.svg"
+              alt="Digital"
             />
           </a>
         </div>
@@ -52,8 +50,8 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Contact Us <span aria-hidden="true">&rarr;</span>
+          <a href="/Contact" className="text-sm font-semibold leading-6 text-gray-900">
+            Contactez-nous <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -69,9 +67,9 @@ export default function Navbar() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                className="h-full w-6/12"
+                src="/assets/Digital.svg"
+                alt="Digital"
               />
             </a>
             <button
