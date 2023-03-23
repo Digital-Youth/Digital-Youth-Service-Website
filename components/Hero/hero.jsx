@@ -8,7 +8,6 @@ export default function Hero() {
 
   return (
     <div className="bg-white">
-
       <main>
         <div className="relative isolate">
           <svg
@@ -70,28 +69,30 @@ export default function Hero() {
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way people connect.
+                  <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                    Des solutions numériques pour les entreprises et les
+                    particuliers
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
-                    quis cupidatat mollit aute velit. Et labore commodo nulla
-                    aliqua proident mollit ullamco exercitation tempor. Sint
-                    aliqua anim nulla sunt mollit id pariatur in voluptate
-                    cillum.
+                    Digital Youth Service Fr crée des solutions numériques sur
+                    mesure pour les entreprises et les particuliers. Nous sommes
+                    passionnés par la réussite en ligne de nos clients et
+                    travaillons en étroite collaboration avec eux pour atteindre
+                    leurs objectifs numériques. Contactez-nous dès aujourd'hui
+                    pour découvrir comment nous pouvons vous aider.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="#"
                       className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Get started
+                      Join our Newsletter
                     </a>
                     <a
                       href="#"
                       className="text-sm font-semibold leading-6 text-gray-900"
                     >
-                      Live demo <span aria-hidden="true">→</span>
+                      Contact Us <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>

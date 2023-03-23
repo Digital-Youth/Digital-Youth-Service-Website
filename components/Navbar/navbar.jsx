@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import Image from 'next/image';
+import Digital from '../../public/assets/Digital.svg'
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Services", href: "#" },
+  { name: "Projets", href: "#" },
+  { name: "Blog", href: "#" },
+  { name: "Contact", href: "#" },
 ];
 
 export default function Navbar() {
@@ -21,10 +22,11 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
+            <Image
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
+              src={Digital}
+                          alt="Digital"
+                         
             />
           </a>
         </div>
@@ -38,7 +40,7 @@ export default function Navbar() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 justify-center">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -51,7 +53,7 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            Contact Us <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -93,14 +95,6 @@ export default function Navbar() {
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
               </div>
             </div>
           </div>

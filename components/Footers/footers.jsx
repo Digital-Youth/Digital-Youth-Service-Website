@@ -1,11 +1,11 @@
 const navigation = {
   main: [
-    { name: "About", href: "#" },
+    { name: "Contact", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
+    { name: "Newsletter", href: "#" },
     { name: "Press", href: "#" },
-    { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Projets", href: "#" },
+    { name: "Services", href: "#" },
   ],
   social: [
     {
@@ -91,7 +91,7 @@ export default function Footers() {
             </div>
           ))}
         </nav>
-        <div className="mt-10 flex justify-center space-x-10">
+        {/* <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
             <a
               key={item.name}
@@ -102,9 +102,9 @@ export default function Footers() {
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
-        </div>
+        </div> */}
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2020 Your Company, Inc. All rights reserved.
+          &copy; 2023 Digital Youth Fr, Inc. All rights reserved.
         </p>
       </div>
     </footer>

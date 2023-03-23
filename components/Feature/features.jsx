@@ -6,23 +6,44 @@ import {
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Conception de sites web personnalisés.",
     description:
-      "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
+      "Nous créons des sites web sur mesure pour chaque client, avec tout ce dont ils ont besoin pour réussir en ligne.",
     href: "#",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Développement d'applications mobiles sur mesure",
     description:
-      "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
+      "Applications mobiles personnalisées selon besoins clients avec interface, fonctionnalités, contenu, bases de données et sécurité adaptés.",
     href: "#",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues",
+    name: "Intégration de fonctionnalités avancées sur les sites web ou les applications mobiles",
     description:
-      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
+      "Fonctionnalités avancées intégrées pour meilleure expérience utilisateur : recherche, réservation, paiement, chat en direct, etc.",
+    href: "#",
+    icon: ArrowPathIcon,
+  },
+  {
+    name: "Optimisation pour les moteurs de recherche (SEO)",
+    description:
+      "Service d'optimisation SEO : contenu, liens entrants, balises, mots-clés pour meilleure visibilité et trafic.",
+    href: "#",
+    icon: ArrowPathIcon,
+  },
+  {
+    name: "Développement de stratégies de marketing numérique",
+    description:
+      "Stratégies marketing numérique pour objectifs commerciaux en ligne : publicité, e-mail, contenu, réseaux sociaux, données.",
+    href: "#",
+    icon: ArrowPathIcon,
+  },
+  {
+    name: "Développement des outils pour le grand public",
+    description:
+      "Nous travaillons sur la conception et le développement d'outils numériques conviviaux pour améliorer la productivité, faciliter les tâches quotidiennes et répondre aux besoins des utilisateurs finaux",
     href: "#",
     icon: ArrowPathIcon,
   },
@@ -33,16 +54,15 @@ export default function Feature() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Deploy faster
+          <h2 className="text-5xl py-2 font-semibold leading-7 text-indigo-600">
+            Nos services
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+            Des solutions numériques personnalisées pour vous
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+            nous proposons une large gamme de services numériques personnalisés
+            pour répondre aux besoins uniques de chaque client. 
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -63,7 +83,7 @@ export default function Feature() {
                       href={feature.href}
                       className="text-sm font-semibold leading-6 text-indigo-600"
                     >
-                      Learn more <span aria-hidden="true">→</span>
+                      Contact Us<span aria-hidden="true">→</span>
                     </a>
                   </p>
                 </dd>

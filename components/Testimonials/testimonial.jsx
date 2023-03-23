@@ -1,64 +1,45 @@
 const featuredTestimonial = {
-  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  body: "Digital Youth Service Fr a créé un site web magnifique pour notre entreprise. Ils ont travaillé en étroite collaboration avec nous pour comprendre nos besoins et ont fourni une solution personnalisée qui a dépassé nos attentes. Leur équipe était professionnelle et compétente tout au long du projet et nous sommes ravis des résultats.",
   author: {
-    name: "Brenna Goyette",
-    handle: "brennagoyette",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
+    name: "Jean-Jacques Bagui",
   },
 };
 const testimonials = [
   [
     [
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+        body: "Nous avons travaillé avec Digital Youth Service Fr pour concevoir un nouveau logo pour notre entreprise et nous avons été extrêmement satisfaits du résultat final. Ils ont pris le temps de comprendre notre marque et ont fourni un design innovant et créatif qui correspond parfaitement à notre entreprise. Nous sommes reconnaissants de leur travail exceptionnel.",
         author: {
-          name: "Leslie Alexander",
-          handle: "lesliealexander",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Kevin Dango",
         },
       },
-      // More testimonials...
     ],
     [
       {
-        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
+        body: "Un site web exceptionnel pour ma boutique en ligne. Ils ont travaillé avec diligence pour comprendre notre marque et nos objectifs, et ont fourni une solution personnalisée qui répond parfaitement à nos besoins. Nous sommes très satisfaits de leur travail et les recommandons sans hésitation.",
         author: {
-          name: "Lindsay Walton",
-          handle: "lindsaywalton",
-          imageUrl:
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Jessica",
         },
       },
-      // More testimonials...
     ],
   ],
   [
     [
       {
-        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.",
+        body: "Mise en place d'une stratégie de marketing numérique pour notre entreprise de coaching personnel et nous avons été très satisfaits des résultats. Ils ont fourni des conseils d'experts pour améliorer notre présence en ligne et augmenter notre visibilité sur les réseaux sociaux.",
         author: {
-          name: "Tom Cook",
-          handle: "tomcook",
-          imageUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Samba Marietta",
         },
       },
-      // More testimonials...
     ],
     [
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
+        body: "L'application mobile que Digital Youth Service Fr a créée pour notre entreprise a dépassé toutes nos attentes. Ils ont été très à l'écoute de nos besoins et ont fourni une solution sur mesure qui répond parfaitement aux besoins de nos clients. Nous avons été impressionnés par leur professionnalisme et leur expertise tout au long du projet.",
         author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Jordan Robert",
         },
       },
-      // More testimonials...
+
     ],
   ],
 ];
@@ -107,11 +88,11 @@ export default function Testimonials() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
+          <h2 className="text-5xl py-2 font-semibold leading-8 tracking-tight text-indigo-600">
             Testimonials
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            We have worked with thousands of amazing people
+          <p className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+            Ils nous ont fait confiance et ils n'ont pas été déçus.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
@@ -120,16 +101,11 @@ export default function Testimonials() {
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 py-4 px-6">
-              <img
-                className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                src={featuredTestimonial.author.imageUrl}
-                alt=""
-              />
+         
               <div className="flex-auto">
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
                 </div>
-                <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
               <img
                 className="h-10 w-auto flex-none"
@@ -164,16 +140,11 @@ export default function Testimonials() {
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img
-                          className="h-10 w-10 rounded-full bg-gray-50"
-                          src={testimonial.author.imageUrl}
-                          alt=""
-                        />
                         <div>
                           <div className="font-semibold">
                             {testimonial.author.name}
                           </div>
-                          <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                         
                         </div>
                       </figcaption>
                     </figure>
